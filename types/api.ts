@@ -43,6 +43,8 @@ export interface CartState {
   updateQty: (productId: string, quantity: number, selectedSize?: string) => void;
 }
 
+export type CartSession = Pick<CartState, "items" | "totalAmount" | "totalCount">;
+
 /**
  * Standard API Envelope Types
  */
